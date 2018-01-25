@@ -94,3 +94,18 @@
 
         document.body.appendChild(s);
     }
+
+    function amazonSearch() {
+                var productName2 = document.getElementById('productName').value.toString();
+                var searchURL = "https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords="+productName2;
+                window.open(searchURL);
+
+    }
+    function youtubeSearch(){
+                        var productName3 = document.getElementById('productName').value.toString();
+                        var searchURL2="https://www.youtube.com/results?search_query=" + productName3 + " review";
+                        window.open(searchURL2);
+
+
+    }
+        
