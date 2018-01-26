@@ -7,47 +7,47 @@
 
 <body>
     <div id="container">
-        <div></div>
-        <h1><u>Multi-Bay <br> <em>The more convienint way to shop on eBay!</em></u></h1>
+        
+        <h1><img src="logo.gif" alt=""><br><em><div id="heading"> The More Convienint Way to Shop on eBay!</em></div></h1>
+      
         <div id="formDiv">
             <form id="form" action="" method=POST>
-                <fieldset class="url">
-                    <label for="productName">Product Name: </label>
-                    <input type="text" name="productName" id="productName" size="30" placeholder="Enter product name">
-                    <br>
-                    <label for="searchNumber">Number of results: </label>
-                    <input type="text" name="searchNumber" id="searchNumber" size="17" value="10">
-                    <br>
-                    <br>Country:
-                    <select name="country" id="country" size="1">
-                        <option>United States</option>
-                        <option>Australia</option>
-                        <option>Austria</option>
-                        <option>Belgium(Dutch)</option>
-                        <option>Belgium(French)</option>
-                        <option>Canada(English)</option>
-                        <option>Canada(French)</option>
-                        <option>France</option>
-                        <option>Germany</option>
-                        <option>Hong Kong</option>
-                        <option>India</option>
-                        <option>Ireland</option>
-                        <option>Italy</option>
-                        <option>Malaysia</option>
-                        <option>Motors</option>
-                        <option>Netherlands</option>
-                        <option>Philippines</option>
-                        <option>Poland</option>
-                        <option>Singapore</option>
-                        <option>Spain</option>
-                        <option>Switzerland</option>
-                        <option>United Kingdom</option>
-                    </select>
-                    <br>
-                    <input type="button" name="Submit" value="Submit" onclick="ebayStart()" id="submit">
-                    <input type="button" name="Submit" value="Link to Amazon Search" onclick="amazonSearch()" id="submit">
-                    <input type="button" name="Submit" value="Youtube Video Review" onclick="youtubeSearch()" id="submit">
-                </fieldset>
+                <label for="productName">Product Name </label>
+                <input type="text" name="productName" id="productName" size="30" placeholder="Enter product name">
+                <br>
+                <label for="searchNumber">Number of results </label>
+                <input type="text" name="searchNumber" id="searchNumber" size="17" value="10">
+                <br>
+                <label for="country">Country</label>
+                <select name="country" id="country" size="1">
+                    <option>United States</option>
+                    <option>Australia</option>
+                    <option>Austria</option>
+                    <option>Belgium(Dutch)</option>
+                    <option>Belgium(French)</option>
+                    <option>Canada(English)</option>
+                    <option>Canada(French)</option>
+                    <option>France</option>
+                    <option>Germany</option>
+                    <option>Hong Kong</option>
+                    <option>India</option>
+                    <option>Ireland</option>
+                    <option>Italy</option>
+                    <option>Malaysia</option>
+                    <option>Motors</option>
+                    <option>Netherlands</option>
+                    <option>Philippines</option>
+                    <option>Poland</option>
+                    <option>Singapore</option>
+                    <option>Spain</option>
+                    <option>Switzerland</option>
+                    <option>United Kingdom</option>
+                </select>
+                <br>
+                <br>
+                <input type="button" name="Submit" value="Amazon Search" onclick="amazonSearch()" id="amazonSubmit">
+                <input type="button" name="Submit" value="Youtube Video Review" onclick="youtubeSearch()" id="youtubeSubmit">
+                <input type="button" name="Submit" value="Submit" onclick="ebayStart()" id="submit">
             </form>
         </div>
         <div id="results"></div>

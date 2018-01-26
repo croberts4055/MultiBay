@@ -19,10 +19,7 @@
 
 
             if (null != title && null != viewitem) {
-                var searchNum = document.getElementById('searchNumber').value;
-
-
-
+                
                 html.push('<tr><td>' + '<img src="' + pic + '" border="0">' + '</td>' +
                     '<td><a href="' + viewitem + '" target="_blank">' + title + '</a></td>' + '<td>' + "Unit Price:" + selling +
                     '<br>' + "Start Time: " + startTime +
@@ -36,26 +33,26 @@
     } // End _cb_findItemsByKeywords() function
 
 
-    // Create a JavaScript array of the item filters you want to use in your request
-    var filterarray = [{
-            "name": "MaxPrice",
-            "value": "25",
-            "paramName": "Currency",
-            "paramValue": "USD"
-        },
-        {
-            "name": "FreeShippingOnly",
-            "value": "true",
-            "paramName": "",
-            "paramValue": ""
-        },
-        {
-            "name": "ListingType",
-            "value": ["AuctionWithBIN", "FixedPrice"],
-            "paramName": "",
-            "paramValue": ""
-        },
-    ];
+    // // Create a JavaScript array of the item filters you want to use in your request
+    // var filterarray = [{
+    //         "name": "MaxPrice",
+    //         "value": "25",
+    //         "paramName": "Currency",
+    //         "paramValue": "USD"
+    //     },
+    //     {
+    //         "name": "FreeShippingOnly",
+    //         "value": "true",
+    //         "paramName": "",
+    //         "paramValue": ""
+    //     },
+    //     {
+    //         "name": "ListingType",
+    //         "value": ["AuctionWithBIN", "FixedPrice"],
+    //         "paramName": "",
+    //         "paramValue": ""
+    //     },
+    // ];
 
     // Define global variable for the URL filter
     var urlfilter = "";
@@ -92,6 +89,7 @@
         var country = document.getElementById('country').value.toString();
 
 
+        // Allows app to change ebay country on demand. 
 
         if (country == "United States") {
             country = "US";
@@ -163,7 +161,7 @@
 
 
     }
-
+    // Grabs whatever is in the productName textbox and does an amazon search for you in a new window. 
     function amazonSearch() {
 
         var productName2 = document.getElementById('productName').value.toString();
@@ -175,7 +173,7 @@
         }
 
     }
-
+    // Grabs whatever is in the productName textbox and does a youtube search for a review of the product. 
     function youtubeSearch() {
         var productName3 = document.getElementById('productName').value.toString();
 
@@ -187,4 +185,4 @@
         }
 
 
-    }
+    }   
