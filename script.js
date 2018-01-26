@@ -141,7 +141,7 @@
         var url = "http://svcs.ebay.com/services/search/FindingService/v1";
         url += "?OPERATION-NAME=findItemsByKeywords";
         url += "&SERVICE-VERSION=1.0.0";
-        url += "&SECURITY-APPNAME=Christop-Marketpl-PRD-951ca6568-761cc9c7"; // ENTER API KEY HERE AFTER THE EQUALS!
+        url += "&SECURITY-APPNAME=Christop-Marketpl-PRD-951ca6568-761cc9c7"; // ENTER API KEY HERE AFTER THE EQUALS!!
         url += "&GLOBAL-ID=EBAY-" + country;
         url += "&RESPONSE-DATA-FORMAT=JSON";
         url += "&callback=_cb_findItemsByKeywords";
